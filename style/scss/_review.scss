@@ -1,0 +1,150 @@
+@use './colors' as *;
+@use './mixins' as *;
+
+.rev-ans {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($white-color, 0.8);
+    backdrop-filter: blur(15px);
+    z-index: 1000000000000000;
+    transition: 0.5s ease-in-out all;
+
+    &.active {
+        top: 0;
+    }
+
+    span.cls-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out all;
+
+        &:hover {
+            background: $gray-color;
+            color: $white-color;
+        }
+    }
+
+    .rev-head {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include centerDiv(column);
+
+        img {
+            width: 100px;
+        }
+
+        span {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+    }
+
+    .ans-cont {
+        position: absolute;
+        height: 80%;
+        top: 20%;
+        padding: 20px;
+        overflow: hidden;
+        overflow-y: auto;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $gray-color;
+        }
+
+        .qst-rev {
+            padding-top: 40px;
+            position: relative;
+            margin: 10px 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 55px;
+                height: 55px;
+                border-left: 2px $gray-color solid;
+                border-top: 2px $gray-color solid;
+                top: 0;
+                left: 0;
+            }
+
+            .qst-rst {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 5px;
+                color: $white-color;
+                background: $gray-color;
+                font-size: 16px;
+
+                &.crkt {
+                    background: $green-color;
+                }
+
+                &.rng {
+                    background: $red-color;
+                }
+
+            }
+
+            p {
+                @include centerDiv(row);
+
+                &.qst-rev-txt {
+                    gap: 10px;
+                    justify-content: flex-start;
+
+                    span:first-child {
+                        background: $gray-color;
+                        color: $white-color;
+                        padding: 10px;
+                        height: 100%;
+                    }
+                }
+
+                &.crkt-ans {
+                    justify-content: flex-start;
+                    margin: 5px 0;
+                    background: $green-color;
+                    gap: 10px;
+
+                    span {
+                        color: $white-color;
+                    }
+                }
+
+                &.rng-ans {
+                    justify-content: flex-start;
+                    margin: 5px 0;
+                    background: $red-color;
+                    gap: 10px;
+
+                    span {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
