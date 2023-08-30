@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/Mahmoud46/Rush_quiz/e44b0809e97c0376e3a81732900893d5d91cb8e7/imgs/main-logo.svg" width="200"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Mahmoud46/rush_quiz/a540852d9a4fe399ef80b3a2d0902460631cf686/imgs/main-logo.svg" width="200"></p>
 <h1 align="center">Rush Quiz</h1>
 <h3 align="center">Simple quiz app with wide range of questions in so many topics</h3>
 
