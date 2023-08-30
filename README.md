@@ -11,4 +11,4 @@
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> 
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
         <p align="center"><a href="https://opentdb.com/api_config.php">Trivia API</a></p>
-<p align="center"><a href="https://mahmoud46.github.io/Rush_quiz/"><img src="https://cdn-icons-png.flaticon.com/512/5038/5038590.png" width="80"></a></p>
+<p align="center"><a href="https://mahmoud46.github.io/rush_quiz/"><img src="https://cdn-icons-png.flaticon.com/512/5038/5038590.png" width="80"></a></p>
