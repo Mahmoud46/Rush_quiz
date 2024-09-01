@@ -1,0 +1,59 @@
+@use './mixins' as *;
+@use './colors' as *;
+
+.foot {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    button {
+        background: none;
+        @include centerDiv(row);
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s ease-in-out all;
+
+        &.inactive {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        &:hover {
+            background: $gray-color;
+
+            span {
+                color: $white-color;
+            }
+        }
+
+        span {
+            padding: 10px;
+            color: $gray-color;
+            font-size: 25px;
+            transition: 0.5s ease-in-out all;
+        }
+    }
+
+    .timer {
+        padding: 10px;
+        position: relative;
+        @include centerDiv(row);
+
+        span {
+            position: absolute;
+            font-size: 40px;
+            opacity: 0.3;
+        }
+
+        i {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+}
