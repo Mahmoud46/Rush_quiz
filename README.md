@@ -2,3 +2,5 @@
 <h1 align="center">Simple Quiz Web App</h1>
 <h1>Overview</h1>
 <p>This application offers variety of questions such as general knowledge, entertainment, sports qusetions and other categories of questions, inadditon it provides three levels of difficulty including easy, medium, and hard. all these questions are collected and shared from <a href="https://opentdb.com/api_config.php">Trivia API</a>.</p>
+<h1>Note</h1>
+<p>Experience the full potential of the simulation with the <a href="https://mahmoud46.github.io/Simple-Quiz-Web-App/">interactive demo</a>.</p>
